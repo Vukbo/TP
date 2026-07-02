@@ -25,7 +25,7 @@ public class TourLogService
         return dto;
     }
 
-    public async Task<TourLogDTO> UpdateTour(TourLogDTO tourLog, int tourLogId)
+    public async Task<TourLogDTO> UpdateTourLog(TourLogDTO tourLog, int tourLogId)
     {
         tourLog.Id = tourLogId;
         var tl = _mapper.Map<TourLog>(tourLog);

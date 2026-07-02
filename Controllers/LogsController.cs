@@ -39,7 +39,7 @@ namespace TourPlanner.Controllers
         {
             try
             {
-                var t = await _tourLogService.UpdateTour(tourLog, id);
+                var t = await _tourLogService.UpdateTourLog(tourLog, id);
                 return Ok(t);
             }
             catch (Exception ex)
