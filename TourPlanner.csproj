@@ -22,5 +22,12 @@
     <ItemGroup>
       <Folder Include="API\Services\" />
     </ItemGroup>
+    
+    
+    <ItemGroup>
+        <Compile Remove="TourPlanner.Tests\**" />
+        <EmbeddedResource Remove="TourPlanner.Tests\**" />
+        <None Remove="TourPlanner.Tests\**" />
+    </ItemGroup>
 
 </Project>
