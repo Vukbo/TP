@@ -9,12 +9,12 @@ public class UserRepository : BaseRepository
     {
     }
 
-    public async Task<User?> GetUserByUsername(string username)
+    public virtual async Task<User?> GetUserByUsername(string username)
     {
         return await dbc.Users.SingleOrDefaultAsync(u => u.Username == username);
     }
 
-    public async Task AddUser(User user)
+    public virtual async Task AddUser(User user)
     {
         try
         {
